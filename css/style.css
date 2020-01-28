@@ -149,24 +149,37 @@ a {
 }
 
 .enter {
+  display: flex;
+  justify-content: center;
   width: 123px;
   height: 45px;
   background-color: #ffffff;
-  color: #000000;
+  padding: 10px;
   text-align: center;
-  font-size: 18px;
-
+  font-size: 22px;
+  font-weight: bolder;
 }
-.enter::before {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 14px;
-  content: "";
-  background-image: url(../img/icon-login.svg);
-  background-repeat: no-repeat;
-  background-position: left center;
-  width: 20px;
-  height: 18px;
+.enter:hover{
+  color: #ee3643;
+}
+.enter:active {
+  color: #cacaca;
+}
+.enter-svg {
+  padding: 3px;
+}
+.enter-svg:hover{
+  fill: #32425c;
+}
+
+.registraition {
+  width: 150px;
+  height: 45px;
+  background-color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bolder;
 }
 
 
@@ -410,11 +423,6 @@ ul.header-nav  {
 }
 
 /*-- Блок популярные товары -*/
-.goods {
-   
- 
-}
-
 .all-goods {
   display:flex;
   align-content:center;
@@ -423,14 +431,10 @@ ul.header-nav  {
   text-transform:uppercase;
   background-color: #f9f5f0;
   margin: 0 30px 0 30px; 
-
-  
 }
 .all-goods h2 {
   color: #32425c;
-
 }
-
 .all-goods a {
   display: flex;
   width: 253px;
@@ -442,7 +446,6 @@ ul.header-nav  {
   text-decoration: none;
   border-radius: 5px;
 }
-
 .goods-items ul {
   position: relative;
   padding-left: 0px;  
@@ -470,6 +473,7 @@ ul.header-nav  {
   font-weight: bold;
   line-height: 20px;
   text-align: center;
+  margin: 0 auto;
   }
 
 
@@ -531,25 +535,22 @@ padding-top: 10px;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 10px;
   }
 .goods-items del{
-  display: flex;
-  width: 141px;
-  align-items: center;
-  justify-content: space-between;
+  padding: 10px 50px 10px 50px;
   height: 38px;
-  text-align: center;
-  color: black;
-  text-decoration: none;
+  color: #a9a9a9;
+  width: 141px;
+  font-weight: bold;
+  
   
   }
 .goods-items ins {
-  display: flex;
+  padding: 10px 50px 10px 50px;
   background-image: url(../img/red-button.svg);
   width: 141px;
   height: 38px;
-  text-align: center;
   color: white;
   text-decoration: none;
 }
@@ -595,6 +596,7 @@ padding-top: 10px;
   align-items: center;
   justify-content: center;
   width: 220px;
+  height: 145px;
   border: 1px solid #f9f5f0;
   margin-top: 10px;
 }
@@ -604,7 +606,7 @@ padding-top: 10px;
 }
 
 .brand-list li:active{
-    z-index: 172;
+    opacity: 0.3;
 }
 
 
