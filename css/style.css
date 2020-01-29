@@ -825,6 +825,8 @@ footer {
   flex-wrap: wrap;
   background-color: #32425c;
 }
+.foot-wrapper
+{display: flex;}
 
 .underfooter {
   background-color: #293449;
