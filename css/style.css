@@ -11,9 +11,7 @@ html {
 }
 
 
-.footer {
-  
-}
+
 
 body {
   font-family:  'Cuprum', Arial, sans-serif;
@@ -823,9 +821,24 @@ padding-top: 10px;
 }
 
 footer {
-    background-color: #32425c;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #32425c;
 }
 
 .underfooter {
   background-color: #293449;
+
+}
+
+}
+.footer-nav li {
+  list-style-type:none;
+ }
+.footer-nav a {
+  
+  color: gold;
+}
+.footer-nav1 a {
+  color: white;
 }
