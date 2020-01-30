@@ -212,7 +212,7 @@
     <div class="service-button">
       <button type="button">Доставка</button>
       <button type="button">Гарантия</button>
-      <button type="button">Кредит</button>
+      <button class="credit-show" type="button">Кредит</button>
     </div>
     <div class="service-button-info">
     <div class="service-delivery">
@@ -237,9 +237,9 @@
         </div>
 
         <div class="service-credit">
-         <a class="credit-show">
+       
           <h3>Кредит</h3>
-         </a>
+        
           <p>Залезть в долговую яму стало проще!
              Кредитные консультанты придут вам на помощь.
           </p>
@@ -270,18 +270,20 @@
       <a href="">Подробнее о компании</a>
     
   </section>
-  <section class="contacts">
-    <div class="container">
+    <section class="contacts">
     <h2>Контакты</h2>
     <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
     <a class="open-map" href="#"></a>
     <button type="button" name="button">ЗАБЛУДИЛИСЬ, НАПИШИТЕ НАМ!</button>
-  
+    </section>
    <!--Форма большой карты-->
    
    <section class="popup">
      <h3 class="visually-hidden">Как к нам проехать</h3>
-     <img src="img/big-map.jpg" width="970" height="476" alt=" г. Санкт-Петербург ул. Б. Конюшенная, д. 19.8">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123918!2d30.32089461595741!3d59.938796869048026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1580396184636!5m2!1sru!2sru"
+      width="970" height="450" frameborder="0" style="border:0;" allowfullscreen="">
+    </iframe>
      <button type="button" class="close-map">
       <span class="visually-hidden">"Закрыть карту" </span>
     </button>
@@ -368,7 +370,7 @@
      </div>
   </footer>
 
-
+  <script src="js-form/app.js"></script>
   <script src="js/app.js"></script>
 
   </body>
