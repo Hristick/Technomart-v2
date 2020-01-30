@@ -12,9 +12,4 @@
   });
 
 
-  var link = document.querySelector(".credit-show");
-  var credit = document.querySelector(".service-credit");
-    link.addEventListener("clik", function(credit){
-        credit.preventDefault();
-        credit.style.display = "block";
-    });
+  
