@@ -129,6 +129,19 @@ a {
 .logo:active {
    background-color: #ba2732;
 }
+.logo-2{
+  display:flex;
+  width: 220px;
+  height: 68px;
+  box-shadow: 0px 5px 0 0 #b52933;
+  background-color: #ee3643;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/logo-technomart.svg);
+  background-repeat: no-repeat;
+  background-position: center 50%;
+  background-size: 50%;
+}
 
 .order {
   display: flex;
@@ -148,6 +161,7 @@ a {
 
 .enter {
   display: flex;
+  align-items: center;
   justify-content: center;
   width: 123px;
   height: 45px;
@@ -157,8 +171,9 @@ a {
   font-size: 22px;
   font-weight: bolder;
 }
-.enter:hover{
-  color: #ee3643;
+.enter:hover .svg-enter{
+  fill: red;
+
 }
 .enter:active {
   color: #cacaca;
@@ -169,6 +184,10 @@ a {
 .enter-svg:hover{
   fill: #32425c;
 }
+.svg-enter {
+  margin-right: 10px;
+}
+
 
 .registraition {
   width: 150px;
@@ -456,6 +475,7 @@ ul.header-nav  {
 .goods-items ul li{
   display: flex;
   flex-direction: column;
+  position: relative;
   border: 1px solid  #f9f5f0;
   justify-content: space-between;
   align-items: center;
@@ -476,7 +496,7 @@ ul.header-nav  {
 
 
 .goods-items li:hover img{
-  display: none;
+  opacity: 0;
 
 }
 .goods-items li:hover{
@@ -484,10 +504,12 @@ ul.header-nav  {
 }
 .goods-items li:hover .hidden-button{
   display: block;
-  order: -1;
+  
 }
 .hidden-button {
-display: none;
+position: absolute;
+display:none;  
+
 }
 .goods-button {
 display: flex;
@@ -589,14 +611,14 @@ padding-top: 10px;
   padding-left: 0px;
   
 }
-.brand-list li {
+.brand-list li a{
   display: flex;
   align-items: center;
   justify-content: center;
   width: 220px;
   height: 145px;
   border: 1px solid #f9f5f0;
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .brand-list li:hover {
@@ -835,6 +857,7 @@ padding-top: 10px;
     color: white;
     margin-bottom: 85px;
     outline: none; 
+    border: none;
   }
 
 .visually-hidden{
@@ -878,9 +901,7 @@ footer {
   background-color: #32425c;
 }
 
-.underfooter {
-  background-color: #293449;
-}
+
 .footer-1 {
   display: flex;
   flex-wrap: wrap;
@@ -890,23 +911,79 @@ footer {
 }
 .footer-nav  {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style-type: none;
   width: 600px;
+   margin-left: 120px;
+   margin-top: 40px;
+   margin-bottom: 14px;
+   padding-left: 110px;
  }
+ .footer-1  a, address {
+   color: white;
+   font-style: normal;
+   font-size: 17px;
+ }
+ .footer-1 address{
+   margin-top: 30px;
+ }
+
 .footer-nav2 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style-type: none;
   width: 600px;
-
+  padding-left: 140px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  margin-left: 40px;
+ 
 }
-
-
 .footer-nav a {
   padding-bottom: 10px;
-  color: gold;
-}
-.footer-nav2 a {
   color: white;
 }
+.footer-nav2 a {
+  color: gold;
+}
+.underfooter {
+  background-color: #293449;
+}
+.underfooter-1{
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.underfooter-1 p{
+  width: 160px;
+  color: white;
+  
+}
+.underfooter-1 span {
+  width: 230px;
+  color: white;
+  margin: 16px 0px 16px 0px;
+}
+.underfooter-1 ul{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 110px;
+  list-style-type: none;
+  width: 160px;
+}
+.underfooter-1 li {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 50%;
+  background-color: #212a3a;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+
+}
+
